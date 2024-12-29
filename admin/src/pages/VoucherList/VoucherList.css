@@ -1,0 +1,190 @@
+/* VoucherList.css
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  button {
+    padding: 8px 12px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #ff1a1a;
+  } */
+
+
+
+
+
+
+  /*css sau khi thêm chỉnh sửa*/
+
+  /* VoucherList.css */
+
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    position: relative;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    margin-left: 10px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    position: relative; /* Đặt bảng ở layer mặc định */
+    z-index: 1; /* Đặt z-index thấp hơn form */
+  }
+  
+  table th,
+  table td {
+    padding: 12px 8px;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+  .sua-xoa{
+    display: flex;
+  }
+  
+  table th {
+    background-color: rgb(183, 179, 179);
+    color: white;
+    font-weight: bold;
+  }
+  
+  table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  button {
+    padding: 8px 12px;
+    margin: 0 4px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  button:hover {
+    opacity: 0.9;
+  }
+  
+  button:first-child {
+    background-color: #28a745; /* Edit button */
+    color: white;
+  }
+  
+  button:last-child {
+    background-color: #dc3545; /* Remove button */
+    color: white;
+  }
+  
+  .edit-form {
+    position: fixed; /* Form sẽ được cố định trên màn hình */
+    top: 50%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff00;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    z-index: 10; /* Đặt form trên layer cao hơn */
+    border: none;
+    
+  }
+  .edit-form form{
+
+  }
+  
+  .edit-form form{
+    margin-left: -200px;
+  }
+  .edit-form h3 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .edit-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .edit-form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .btn{
+    justify-content: space-between;
+  }
+
+  .edit-form button {
+    margin: 0 8px;
+    width: fit-content;
+  }
+  
+  .edit-form button[type="submit"] {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .edit-form button[type="button"] {
+    background-color: #dc3545;
+    color: white;
+  }
+  

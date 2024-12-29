@@ -1,0 +1,53 @@
+.review-component {
+  margin: 20px;
+}
+
+.review-form {
+  margin-bottom: 20px;
+}
+
+.rating-stars span {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+textarea {
+  width: 100%;
+  margin: 10px 0;
+  padding: 8px;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.review-list .review-item {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.review-item strong{
+  justify-content: space-between;
+  color: #00000071;
+}
+.review-item small{
+  justify-content: space-between;
+  color: #00000074;
+}
+.remove-button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.remove-button:hover {
+  background-color: #c0392b;
+}

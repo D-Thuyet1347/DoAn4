@@ -1,0 +1,391 @@
+/* Tổng thể của phần chứa thông tin khách hàng */
+.customer-info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1000px; /* Increased max-width */
+  margin: 50px auto;
+  padding: 30px; /* Increased padding */
+  background-color: #ffffff;
+  border-radius: 12px; /* Slightly more rounded */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Increased shadow */
+  transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+.customer-info:hover {
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15); /* Enhanced hover effect */
+}
+
+/* Phần chứa avatar */
+.avatar-section {
+  width: 30%;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    position: relative;
+}
+.avatar-container {
+    position: relative;
+    display: inline-block;
+}
+
+.avatar {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+    border: 5px solid #e0f2e9; /* Changed border color */
+    margin-bottom: 20px; /* Increased margin */
+    transition: transform 0.3s ease;
+}
+
+.avatar:hover{
+     transform: scale(1.05);
+      cursor: pointer;
+}
+
+.avatar-section p {
+  font-size: 14px;
+  color: #333;
+  margin: 8px 0;
+  font-weight: 600;
+}
+
+.input[type="file"] {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.info-details {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.info-details p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+  margin: 8px 0;
+}
+
+.info-details p strong {
+  color: #555;
+  font-weight: bold;
+}
+
+/* Phần chứa thông tin khách hàng với labels và values */
+.info-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.info-label {
+  font-weight: bold;
+  color: #555;
+  width: 40%;
+  text-align: left;
+}
+
+.info-value {
+  color: #333;
+  text-align: right;
+  width: 60%;
+  word-break: break-word;
+}
+
+/* Làm đậm phần bên trái (labels) */
+.info-label {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Phần chứa form thông tin khách hàng */
+.info-section {
+  width: 68%; /* Adjusted width */
+  background-color: #fff; /* Changed background color */
+  border-radius: 12px; /* More rounded */
+  padding: 30px; /* Increased padding */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05); /* Increased shadow */
+}
+
+h1 {
+  text-align: left;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px; /* Reduced margin */
+    font-weight: 600; /* Slightly lighter font-weight */
+    color: #444; /* Darker color for labels */
+    transition: color 0.2s ease-in-out; /* Smooth transition for color */
+}
+
+form label:hover {
+    color: #2c3e50; /* Darker color on hover */
+}
+
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="password"],
+form select {
+  width: 100%;
+  padding: 12px 15px; /* Slightly bigger padding */
+    margin-bottom: 18px; /* Increased margin */
+  border: 1px solid #d4e1d8;
+  border-radius: 6px;
+  font-size: 15px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="tel"]:focus,
+form input[type="password"]:focus,
+form select:focus {
+  outline: none;
+  border-color: #75a086; /* Changed focus color */
+  box-shadow: 0 0 8px rgba(101, 160, 131, 0.5);
+}
+
+button[type="submit"] {
+  background-color: tomato;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Added shadow to the button */
+}
+
+
+button[type="submit"]:hover {
+  background-color: tomato;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: -10px;
+}
+
+select {
+  font-size: 15px;
+}
+
+/* Điều chỉnh cho phần thông tin nhóm */
+.avatar-section .info-group {
+  text-align: left;
+  margin-top: 10px;
+}
+
+.info-group p {
+  font-size: 14px;
+  margin: 5px 0;
+  color: #555;
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-group p span {
+  font-weight: bold;
+}
+
+.info-group .info-value {
+  text-align: right;
+  color: #333;
+}
+
+.info-group p span.info-label {
+  font-weight: bold;
+  color: #555;
+}
+/* Style for avatar dropdown options */
+.avatar-options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+}
+
+.avatar-options button {
+    display: block;
+    width: 100%;
+    padding: 8px 12px;
+    border: none;
+     border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    text-align: left;
+    background: none;
+     transition: background-color 0.3s;
+        font-weight: bold;
+    color: #333;
+}
+ .avatar-options button:hover {
+     background-color: #f0f0f0;
+}
+
+
+ .avatar-options button:last-child {
+     background-color: #8594a5;
+     color: white;
+     border-radius: 4px;
+     padding: 8px 12px;
+     font-weight: bold;
+ }
+ .avatar-options button:last-child:hover {
+     background-color: #0056b3;
+ }
+ /* Style for info labels */
+.info-labels {
+    text-align: left;
+    margin-top: 10px;
+    width: 100%;
+}
+.info-labels p {
+    margin-bottom: 5px;
+     display: grid;
+    grid-template-columns: auto 1fr;
+     align-items: baseline;
+     white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.info-labels strong {
+    font-weight: bold; /* Keep labels bold */
+    margin-right: 5px;
+    flex-shrink: 0; /* Prevent label from shrinking */
+     padding-right: 10px;
+        text-align: left; /* Align text to the left */
+}
+.info-labels p span {
+    text-align: left;
+    font-weight: normal;
+}
+
+/* Style for password form */
+.password-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+.password-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.password-form input:focus{
+      outline: none;
+  border-color: #4caf50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.8);
+}
+.password-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px; /* Adjust gap as needed */
+}
+
+.password-buttons button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+
+.password-buttons button:first-child {
+     background-color: #4caf50;
+    color: white;
+    }
+.password-buttons button:first-child:hover{
+     background-color: #45a049;
+}
+ .password-buttons button:last-child {
+     background-color: #f44336;
+    color: white;
+    }
+.password-buttons button:last-child:hover{
+    background-color: #d32f2f;
+}
+.success-message {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  width: auto;
+}
+
+.success-message-content {
+  display: flex;
+  align-items: center;
+  background-color: #e8f9f1;
+  padding: 10px 15px;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   color: #119635;
+    border: 1px solid #d4edda;
+  gap: 10px;
+   position: relative;
+}
+.success-message-content::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+   width: 3px;
+  background-color: #119635;
+  border-top-left-radius: 4px;
+   border-bottom-left-radius: 4px;
+}
+
+
+.close-button {
+  cursor: pointer;
+  margin-left: auto;
+  font-size: 16px;
+  font-weight: bold;
+   color: #888;
+   transition: color 0.3s;
+}
+
+.close-button:hover {
+ color: #333;
+}
+
+.success-icon {
+  font-size: 1.2rem;
+  color: #119635;
+}

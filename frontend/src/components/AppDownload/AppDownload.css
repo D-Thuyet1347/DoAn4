@@ -1,0 +1,26 @@
+.app-download{
+    margin: auto auto;
+    margin-top: 100px;
+    font-size: max(3vw,20px);
+    font-weight: 500;
+}
+.app-download p{
+    justify-content: center;
+    display: flex;
+    color: rgb(7, 1, 94);
+}
+.app-download-platsforms{
+    display: flex;
+    justify-content: center;
+    gap: max(2vw ,10px);
+    margin-top: 40px ;
+}
+.app-download-platsforms img{
+    width: max(30vw,120px);
+    max-width: 180px;
+    transform: 0.5s;
+    cursor: pointer;
+}
+.app-download-platsforms img:hover{
+   transform: scale(1.05);
+}

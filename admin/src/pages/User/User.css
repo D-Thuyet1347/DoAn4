@@ -1,0 +1,144 @@
+/* Container chung */
+.user {
+    padding: 20px;
+    max-width: 1200px; /* Tăng chiều rộng tối đa */
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  .user > p {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #555;
+  }
+  
+  /* Bảng danh sách người dùng */
+  .user-table {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Header bảng */
+  .user-table-format.title {
+    background-color: #f7f7f7;
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 3fr 2fr 1fr; /* Tăng tỉ lệ chiều rộng cột */
+    padding: 10px 20px; /* Tăng padding */
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Dòng trong bảng */
+  .user-table-format {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 3fr 2fr 1fr; /* Tăng tỉ lệ chiều rộng cột */
+    align-items: center;
+    padding: 10px 20px; /* Tăng padding */
+    border-bottom: 1px solid #eee;
+  }
+  
+  /* Text hiển thị */
+  .user-table-format p {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  /* Avatar */
+  .user-table-format img {
+    width: 50px; /* Tăng kích thước ảnh */
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  /* Nút xóa */
+  .cursor {
+    color: red;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .cursor:hover {
+    color: darkred;
+    text-decoration: underline;
+  }
+  
+  /* Khi không có người dùng */
+  .user-table .no-users {
+    text-align: center;
+    padding: 20px;
+    color: #999;
+  }
+  .confirmation-dialog {
+    position: fixed;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 100px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    z-index: 1000;
+  }
+  
+  .btn-confirm {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .btn-cancel {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .cursor {
+    cursor: pointer;
+    color: red;
+  }
+  
+  
+  /* Responsive cho thiết bị nhỏ */
+  @media (max-width: 768px) {
+    .user {
+      max-width: 100%; /* Đảm bảo giao diện vừa màn hình nhỏ */
+    }
+  
+    .user-table-format, .user-table-format.title {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  
+    .user-table-format img {
+      grid-column: 1 / span 3;
+      margin: 0 auto;
+    }
+  
+    .cursor {
+      grid-column: 1 / span 3;
+      text-align: center;
+    }
+  }
+  
